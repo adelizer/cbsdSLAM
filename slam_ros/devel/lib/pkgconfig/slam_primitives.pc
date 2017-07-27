@@ -1,8 +1,0 @@
-prefix=/home/adel/workspace/slam/slam_ros/devel
-
-Name: slam_primitives
-Description: Description of slam_primitives
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/adel/workspace/slam/slam_ros/devel/lib 
-Requires: 

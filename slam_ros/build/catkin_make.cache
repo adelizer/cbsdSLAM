@@ -1,2 +1,0 @@
-composites:primitives
--DCATKIN_DEVEL_PREFIX=/home/adel/workspace/slam/slam_ros/devel -DCMAKE_INSTALL_PREFIX=/home/adel/workspace/slam/slam_ros/install -G Unix Makefiles

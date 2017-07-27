@@ -1,8 +1,0 @@
-prefix=/home/adel/workspace/slam/slam_ros/install
-
-Name: slam_composites
-Description: Description of slam_composites
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/adel/workspace/slam/slam_ros/install/lib 
-Requires: 
