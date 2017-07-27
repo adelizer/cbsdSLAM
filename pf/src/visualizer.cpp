@@ -10,9 +10,6 @@ void Visualizer::config(){
     winSLAM2d.setPos(1000,10);
     winSLAM2d.resize(640, 480);
     winSLAM2d.axis(-3, 3, -3, 3);
-    //    win3D = CDisplayWindow3D::Create("", 640, 480);
-    //    win3D->setMaxRange(
-    //    win3D = new CDisplayWindow3D("Particle Filter 3D scene", 640, 480);
 
 }
 
@@ -40,14 +37,7 @@ void Visualizer::showParticles(){
     winSLAM2d.plot( plotX, plotY,"g-4","angle");
     winSLAM2d.hold_on();
 
-// only for occupancy grid maps
-//        try{
-//            CImage		img;
-//            pf->drawCurrentEstimationToImage( &img );
-//            frame.showImage(img);
-//        }catch(...){
-//            cout << "ERROR" <<  endl;
-//        }
+
 }
 
 void Visualizer::showGrid(){
@@ -57,10 +47,7 @@ void Visualizer::showGrid(){
     CImage	img;
     grid->getAsImage(img);
     frame.showImage(img);
-//    vector<float>   map1_xs, map1_ys, map1_zs;
-//    map_1->getAllPoints(map1_xs,map1_ys,map1_zs);
-//    winSLAM2d.plot( map1_xs, map1_ys, "b.3", "map1");
-//    winSLAM2d.hold_on();
+
 }
 
 void Visualizer::showPointsMap(){
@@ -107,7 +94,7 @@ void Visualizer::show3D(){
     objCam->setPointingAt(robotPose);
     objCam->setAzimuthDegrees(-80);
     objCam->setElevationDegrees(30);
-    //    scene->insert( objCam );
+
 
     // Draw the robot particles:
     size_t M = pf->mapPDF.particlesCount();
@@ -159,22 +146,15 @@ void Visualizer::printInfo(){
             ", X: " << pf->currentPose.x() << ", Y: " << pf->currentPose.y() <<
             ", Theta:" << pf->currentPose.yaw() << endl;
 
-    //    printRandom();
+
 }
 
 void Visualizer::printRandom(){
 
-    //    cout <<     currentPDF.m_particles[0].d->x() <<  endl;
-    //    CVectorDouble temp;
-    //    currentPDF.m_particles[0].d->getAsVector(temp);
-    //    cout << temp.rows() << endl;
-    //    currentPDF.CParticleData.d->getAsVector(temp);
-    //    if((step > 5) && (step % 5 == 0)){
 
     CBeaconMapPtr beaconMap = pf->mostLikMap->getMapByClass<maps::CBeaconMap>();
     COccupancyGridMap2DPtr gridMap = pf->mostLikMap->getMapByClass<maps::COccupancyGridMap2D>();
-    //    beaconMap->insertionOptions.dumpToConsole();
-    //    cout << "Printing the values in the beacon map " << tempMap-> << endl;
+
     if(beaconMap->size() > 0){
         CBeacon bec = beaconMap->get(0);
         cout << "Now we have a new beacon " << bec.getMeanVal().x() << endl;

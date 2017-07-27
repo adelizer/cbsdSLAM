@@ -29,7 +29,7 @@ void ICP::config(){
     icpSolver.options.ALFA					= 0.9f;
     icpSolver.options.smallestThresholdDist	= 0.05f;
     icpSolver.options.doRANSAC = true;
-    //    icpSolver.options.dumpToConsole();
+
 }
 
 void ICP::peroformICP(){

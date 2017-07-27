@@ -6,10 +6,9 @@
 
 class visionFeaturesCoordinator
 {
-//    visionFeatureExtractor extractor;
+
     arucoDetectorCV2 markerD;
-//    VisualOdometry vo;
-//    FrameMatcherVO fm;
+
 
 public:
     visionFeaturesCoordinator();

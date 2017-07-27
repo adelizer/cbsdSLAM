@@ -171,7 +171,7 @@ void mrptKF2d::OnTransitionNoise(CKalmanFilterCapable::KFMatrix_VxV &out_Q) cons
 }
 
 void mrptKF2d::OnGetObservationNoise(KFMatrix_OxO &out_R) const{
-//    out_R.ones();
+
     out_R(0,0) = rangeNoise;
     out_R(1,1) = bearingNoise;
 }

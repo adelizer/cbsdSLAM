@@ -2,7 +2,7 @@
 
 PFCoordinator::PFCoordinator(){
     CMetricMapBuilderRBPF::TConstructionOptions  newOptions;
-//    CConfigFile iniFile("./../config/config.ini");
+
     CConfigFile iniFile("/home/adel/workspace/slam/primitives/pf/config/config.ini");
 
     newOptions.loadFromConfigFile(iniFile, "RBPFSLAM");
@@ -23,7 +23,6 @@ void PFCoordinator::runOnce(){
     viz.showParticles();
     viz.showGrid();
     viz.showLandmarks();
-//    viz.printInfo();
     kill = viz.checkKill();
     if(kill)
         pf->~mrptPF();

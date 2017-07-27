@@ -50,14 +50,12 @@ mrptPF::~mrptPF(){
                           (unsigned int)parts.second );
         sOutMap += ".simplemap";
         mapPDF.saveCurrentPathEstimationToTextFile("./../logging/sessions/pathEstimation");
-        //            mostLikMap->saveMetricMapRepresntationToFile("/results/map.txt");
-        //            mostLikMap->m_landmarksMap->saveToMATLABScript2D("landmarks", "b", 2.0);
 
         sOutMap = mrpt::system::fileNameStripInvalidChars( sOutMap );
-        //            saveCurrentMapToFile(sOutMap);
+
         cout << "\n Current map saved to file " << endl;
     } catch (std::exception &e) {
-        //            ROS_ERROR("Exception: %s",e.what());
+
     }
 
 }
@@ -73,15 +71,14 @@ void mrptPF::config(){
 
     // helper variables to test what are the interfaces
     CProbabilityParticle<CRBPFParticleData> data;
-    //    data.log_w
-    //    data.d->mapTillNow.m_pointsMaps
+
     TPose3D t;
 
     for(int i = 0; i < mapPDF.m_particles.size(); i++){ // loop and random generate particles
         // get current particle (i) pose and randomly distribute in the covariance
         mapPDF.m_particles[i].d->robotPath[0].x = randomGenerator.drawGaussian1D(0.0f, 0.1f);
         mapPDF.m_particles[i].d->robotPath[0].y = randomGenerator.drawGaussian1D(0.0f, 0.1f);
-        //        mapPDF.m_particles[i].d->robotPath[0].yaw =  randomGenerator.drawGaussian1D(0.0f, 0.01f);
+
 
     }
 
@@ -220,7 +217,7 @@ void mrptPF::doProcess(){
     observations->clear();
     step++;
 
-    //    testBeaconMap();
+
 }
 
 
@@ -285,7 +282,7 @@ void mrptPF::updateParticle(double range, double bearing, int id, int i){
     w = w1 * SCholInv.transpose();
     resultX = w*v;
     resultP = cov2 - w1*w1.transpose();
-    //    mapPDF.m_particles[i].d->mapTillNow.m_landmarksMap->landmarks[landmarkOrder].setPose(CPointPDFGaussian(CPoint3D(lx + result(0), ly + result(1))));
+
     CMatrixDouble33 fUpdate;
     fUpdate.zeros();
     fUpdate(0,0) = resultP(0,0); fUpdate(0,1) = resultP(0,1);
@@ -293,10 +290,7 @@ void mrptPF::updateParticle(double range, double bearing, int id, int i){
     fUpdate(2,2) = 0.001;
     l->setPose(CPointPDFGaussian(CPoint3D(lx + resultX(0), ly + resultX(1), 0), fUpdate));
 
-    if(i == 0){
-        //        cout << "How much the location of the landmark is updated \n " << resultX  << endl;
-        //        cout << "=====" << endl;
-    }
+
 
     // update the weight of the particle
     mapPDF.m_particles[i].log_w +=

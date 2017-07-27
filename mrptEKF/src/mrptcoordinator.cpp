@@ -13,7 +13,6 @@ void mrptCoordinator::config(){
 void mrptCoordinator::runOnce(){
     ekfSLAM.doProcess();
     ekfSLAM.visualize();
-    //ekfSLAM.printInfo();
     kill = ekfSLAM.kill;
 }
 
