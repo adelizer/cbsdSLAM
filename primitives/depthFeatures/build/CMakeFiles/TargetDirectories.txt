@@ -1,1 +1,0 @@
-/home/adel/workspace/slam/primitives/depthFeatures/build/CMakeFiles/test_depth_features.dir

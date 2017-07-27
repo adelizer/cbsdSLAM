@@ -1,1 +1,0 @@
-/home/adel/workspace/slam/primitives/vo/build/CMakeFiles/test_vo.dir

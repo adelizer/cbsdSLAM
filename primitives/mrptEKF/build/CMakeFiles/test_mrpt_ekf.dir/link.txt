@@ -1,1 +1,0 @@
-/usr/bin/g++    -std=c++11 -Wno-long-long -Wno-variadic-macros    CMakeFiles/test_mrpt_ekf.dir/tests/testEKF.cpp.o CMakeFiles/test_mrpt_ekf.dir/src/mrptkf2d.cpp.o CMakeFiles/test_mrpt_ekf.dir/src/mrptcoordinator.cpp.o  -o test_mrpt_ekf -rdynamic -lmrpt-base -lmrpt-opengl -lmrpt-obs -lmrpt-gui -lmrpt-graphs -lmrpt-vision -lmrpt-tfest -lmrpt-maps -lmrpt-slam -lmrpt-topography 
