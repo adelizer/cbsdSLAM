@@ -1,0 +1,9 @@
+%YAML:1.0
+cameraMatrix: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 534.745346, 0, 311.883701, 0, 534.464055, 255.480002, 0, 0, 1 ]
+Extra: 
+   markerSize: 0.17
+   display: 0

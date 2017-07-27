@@ -1,0 +1,4 @@
+1- Resolve the warning for the conflict between aruco libraries and the new opencv 3.2 libraries. 
+2- Install the contrib modules to opencv (check make only not make install)
+3- Determine opencv version at compile time. If 3.2 include the correct headers and remove the aruco linkers in the CMakeLists.txt and also in the header inclusions. 
+

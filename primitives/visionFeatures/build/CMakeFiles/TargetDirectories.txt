@@ -1,0 +1,2 @@
+/home/adel/workspace/slam/primitives/visionFeatures/build/CMakeFiles/test_vision_features.dir
+/home/adel/workspace/slam/primitives/visionFeatures/build/CMakeFiles/unitTests.dir

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="mrptEKF_slam" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\share\;CMake Files\..\..\..\..\..\..\usr\share\mrpt\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/adel/workspace/slam/primitives/mrptEKF/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/mrptEKF/build/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/mrptEKF/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/mrptEKF/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/mrptEKF/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/adel/workspace/slam/primitives/mrptEKF/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/mrptEKF/build/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/mrptEKF/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/mrptEKF/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/mrptEKF/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="test_mrpt_ekf">
+         <Option output="/home/adel/workspace/slam/primitives/mrptEKF/build/test_mrpt_ekf" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/adel/workspace/slam/primitives/mrptEKF/build" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DCOMPILEDWITHC11" />
+            <Add directory="/home/adel/workspace/catkin_ws/devel/include" />
+            <Add directory="/home/adel/workspace/slam/primitives/mrptEKF/include" />
+            <Add directory="/home/adel/workspace/slam/primitives/mrptEKF/src" />
+            <Add directory="/opt/ros/indigo/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/eigen3" />
+            <Add directory="/usr/include/mrpt/base/include" />
+            <Add directory="/usr/include/mrpt/bayes/include" />
+            <Add directory="/usr/include/mrpt/graphs/include" />
+            <Add directory="/usr/include/mrpt/gui/include" />
+            <Add directory="/usr/include/mrpt/maps/include" />
+            <Add directory="/usr/include/mrpt/mrpt-config" />
+            <Add directory="/usr/include/mrpt/obs/include" />
+            <Add directory="/usr/include/mrpt/opengl/include" />
+            <Add directory="/usr/include/mrpt/slam/include" />
+            <Add directory="/usr/include/mrpt/tfest/include" />
+            <Add directory="/usr/include/mrpt/topography/include" />
+            <Add directory="/usr/include/mrpt/vision/include" />
+            <Add directory="/usr/include/suitesparse" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/mrptEKF/build/Makefile&quot;  VERBOSE=1 test_mrpt_ekf" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/mrptEKF/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/mrptEKF/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/mrptEKF/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="test_mrpt_ekf/fast">
+         <Option output="/home/adel/workspace/slam/primitives/mrptEKF/build/test_mrpt_ekf" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/adel/workspace/slam/primitives/mrptEKF/build" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DCOMPILEDWITHC11" />
+            <Add directory="/home/adel/workspace/catkin_ws/devel/include" />
+            <Add directory="/home/adel/workspace/slam/primitives/mrptEKF/include" />
+            <Add directory="/home/adel/workspace/slam/primitives/mrptEKF/src" />
+            <Add directory="/opt/ros/indigo/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/eigen3" />
+            <Add directory="/usr/include/mrpt/base/include" />
+            <Add directory="/usr/include/mrpt/bayes/include" />
+            <Add directory="/usr/include/mrpt/graphs/include" />
+            <Add directory="/usr/include/mrpt/gui/include" />
+            <Add directory="/usr/include/mrpt/maps/include" />
+            <Add directory="/usr/include/mrpt/mrpt-config" />
+            <Add directory="/usr/include/mrpt/obs/include" />
+            <Add directory="/usr/include/mrpt/opengl/include" />
+            <Add directory="/usr/include/mrpt/slam/include" />
+            <Add directory="/usr/include/mrpt/tfest/include" />
+            <Add directory="/usr/include/mrpt/topography/include" />
+            <Add directory="/usr/include/mrpt/vision/include" />
+            <Add directory="/usr/include/suitesparse" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/mrptEKF/build/Makefile&quot;  VERBOSE=1 test_mrpt_ekf/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/mrptEKF/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/mrptEKF/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/mrptEKF/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/adel/workspace/slam/primitives/mrptEKF/src/mrptcoordinator.cpp">
+      </Unit>
+      <Unit filename="/home/adel/workspace/slam/primitives/mrptEKF/src/mrptkf2d.cpp">
+      </Unit>
+      <Unit filename="/home/adel/workspace/slam/primitives/mrptEKF/tests/testEKF.cpp">
+      </Unit>
+      <Unit filename="/home/adel/workspace/slam/primitives/mrptEKF/src/mrptcoordinator.h">
+      </Unit>
+      <Unit filename="/home/adel/workspace/slam/primitives/mrptEKF/src/mrptkf2d.h">
+      </Unit>
+      <Unit filename="/home/adel/workspace/slam/primitives/mrptEKF/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/adel/workspace/slam/primitives/mrptEKF/../../../../../../usr/share/mrpt/MRPTConfig-version.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\share\mrpt\" />
+      </Unit>
+      <Unit filename="/home/adel/workspace/slam/primitives/mrptEKF/../../../../../../usr/share/mrpt/MRPTConfig.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\share\mrpt\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

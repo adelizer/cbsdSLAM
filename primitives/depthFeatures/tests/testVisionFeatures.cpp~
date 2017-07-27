@@ -1,0 +1,26 @@
+
+
+#include <iostream>
+#include <unistd.h>
+
+
+using namespace std;
+
+void testDepthFeatures(){
+    cout << "Testing testScanFusion Component " << endl;
+
+
+int main(int argc, char **argv){
+    try{
+        testScanFusion();
+        cout << "Exited cleanly " <<  endl;
+        return 0;
+    }catch (std::exception &e){
+        cout << "STD exception caught: " << e.what() << endl;
+        return -1;
+    }catch (...){
+        printf("Untyped exception!!");
+        return -1;
+    }
+    return 0;
+}

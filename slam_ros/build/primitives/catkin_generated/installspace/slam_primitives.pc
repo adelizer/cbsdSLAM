@@ -1,0 +1,8 @@
+prefix=/home/adel/workspace/slam/slam_ros/install
+
+Name: slam_primitives
+Description: Description of slam_primitives
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/adel/workspace/slam/slam_ros/install/lib 
+Requires: 

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="vo_slam" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\external\;CMake Files\..\..\..\external\opencv3\;CMake Files\..\..\..\external\opencv3\opencv\;CMake Files\..\..\..\external\opencv3\opencv\release\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/adel/workspace/slam/primitives/vo/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/vo/build/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/vo/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/vo/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/vo/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/adel/workspace/slam/primitives/vo/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/vo/build/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/vo/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/vo/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/vo/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="test">
+         <Option working_dir="/home/adel/workspace/slam/primitives/vo/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/vo/build/Makefile&quot;  VERBOSE=1 test" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/vo/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/vo/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/vo/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="test_vo">
+         <Option output="/home/adel/workspace/slam/primitives/vo/build/test_vo" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/adel/workspace/slam/primitives/vo/build" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DUSE_OPENCV3=1" />
+            <Add option="-DCOMPILEDWITHC11" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/include/opencv" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/calib3d/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/core/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/features2d/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/flann/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/highgui/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/imgcodecs/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/imgproc/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/ml/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/objdetect/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/photo/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/shape/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/stitching/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/superres/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/ts/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/video/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/videoio/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/videostab/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/viz/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/release" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/aruco/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/bgsegm/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/bioinspired/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/ccalib/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/datasets/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/dnn/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/dpm/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/face/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/freetype/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/fuzzy/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/line_descriptor/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/matlab/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/optflow/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/phase_unwrapping/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/plot/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/reg/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/rgbd/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/saliency/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/sfm/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/stereo/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/structured_light/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/surface_matching/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/text/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/tracking/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/xfeatures2d/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/ximgproc/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/xobjdetect/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/xphoto/include" />
+            <Add directory="/home/adel/workspace/slam/primitives/vo/include" />
+            <Add directory="/home/adel/workspace/slam/primitives/vo/src" />
+            <Add directory="/opt/ros/indigo/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/eigen3" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/vo/build/Makefile&quot;  VERBOSE=1 test_vo" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/vo/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/vo/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/vo/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="test_vo/fast">
+         <Option output="/home/adel/workspace/slam/primitives/vo/build/test_vo" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/adel/workspace/slam/primitives/vo/build" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DUSE_OPENCV3=1" />
+            <Add option="-DCOMPILEDWITHC11" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/include/opencv" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/calib3d/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/core/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/features2d/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/flann/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/highgui/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/imgcodecs/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/imgproc/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/ml/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/objdetect/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/photo/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/shape/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/stitching/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/superres/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/ts/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/video/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/videoio/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/videostab/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/modules/viz/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv/release" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/aruco/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/bgsegm/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/bioinspired/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/ccalib/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/datasets/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/dnn/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/dpm/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/face/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/freetype/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/fuzzy/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/line_descriptor/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/matlab/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/optflow/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/phase_unwrapping/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/plot/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/reg/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/rgbd/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/saliency/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/sfm/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/stereo/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/structured_light/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/surface_matching/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/text/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/tracking/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/xfeatures2d/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/ximgproc/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/xobjdetect/include" />
+            <Add directory="/home/adel/workspace/external/opencv3/opencv_contrib/modules/xphoto/include" />
+            <Add directory="/home/adel/workspace/slam/primitives/vo/include" />
+            <Add directory="/home/adel/workspace/slam/primitives/vo/src" />
+            <Add directory="/opt/ros/indigo/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/eigen3" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/vo/build/Makefile&quot;  VERBOSE=1 test_vo/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/vo/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/vo/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/adel/workspace/slam/primitives/vo/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/adel/workspace/slam/primitives/vo/src/framematcher.cpp">
+      </Unit>
+      <Unit filename="/home/adel/workspace/slam/primitives/vo/src/vo_utils.cpp">
+      </Unit>
+      <Unit filename="/home/adel/workspace/slam/primitives/vo/src/vocoordinator.cpp">
+      </Unit>
+      <Unit filename="/home/adel/workspace/slam/primitives/vo/tests/testvo.cpp">
+      </Unit>
+      <Unit filename="/home/adel/workspace/slam/primitives/vo/src/framematcher.h">
+      </Unit>
+      <Unit filename="/home/adel/workspace/slam/primitives/vo/src/vo_utils.h">
+      </Unit>
+      <Unit filename="/home/adel/workspace/slam/primitives/vo/src/vocoordinator.h">
+      </Unit>
+      <Unit filename="/home/adel/workspace/slam/primitives/vo/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/adel/workspace/slam/primitives/vo/../../../external/opencv3/opencv/release/OpenCVConfig-version.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\external\opencv3\opencv\release\" />
+      </Unit>
+      <Unit filename="/home/adel/workspace/slam/primitives/vo/../../../external/opencv3/opencv/release/OpenCVConfig.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\external\opencv3\opencv\release\" />
+      </Unit>
+      <Unit filename="/home/adel/workspace/slam/primitives/vo/../../../external/opencv3/opencv/release/OpenCVModules.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\external\opencv3\opencv\release\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>
