@@ -8,7 +8,7 @@ class mrptCoordinator
     mrptKF2d ekfSLAM;
 public:
     mrptCoordinator();
-    virtual ~mrptCoordinator();
+    ~mrptCoordinator();
     void config();
     void runOnce();
     void setInput(double x, double y, double theta);

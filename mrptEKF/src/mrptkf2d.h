@@ -43,7 +43,7 @@ class mrptKF2d : public mrpt::slam::CRangeBearingKFSLAM2D
 
 public:
     mrptKF2d();
-    virtual ~mrptKF2d();
+    ~mrptKF2d();
     void config();
     void setInput(double x, double y, double theta); // <--- Entry point to inputs
     void setObservations(vector<double>& x, vector<double>& y, vector<double>& z, vector<int>& ids); // <--- Entry point to observations

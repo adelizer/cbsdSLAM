@@ -15,7 +15,7 @@ void testEKF(){
     x.push_back(1); y.push_back(1); z.push_back(1);
     ids.push_back(1);
     while(!m.kill){
-        m.setInput(0.1, 0, 0);
+        m.setInput(0.01, 0, 0.01);
         if(counter == 100){
             m.setObservations(x,y,z,ids);
         }
