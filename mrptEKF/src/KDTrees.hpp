@@ -23,9 +23,12 @@
 struct Landmark{
     float x,y;
     int id;
-    Landmark(float _x, float _y){x = _x; y = _y;};
+    Landmark(){x=0;y=0;id=-1;}
+    Landmark(float _x, float _y, int _id){x = _x; y = _y; id=_id;};
     ~Landmark(){};
 };
+
+typedef std::vector<Landmark> Landmarks_vector;
 
 struct Region{
     float x1,y1,x2,y2,width,height;
@@ -56,8 +59,16 @@ struct Region{
 
 class KdTrees
 {
+private:
+    Landmark l;
+    KdTrees * left_tree;
+    KdTrees * right_tree;
+    
 public:
     KdTrees(){}
+    bool isLeaf() const { return (left_tree == NULL && right_tree == NULL); }
+
+
 };
 
 #include <stdio.h>
