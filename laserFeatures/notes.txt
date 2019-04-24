@@ -1,0 +1,1 @@
+* Explore the idea of creating a KD-tree and perform the clustering in that space
